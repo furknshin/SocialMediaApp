@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.aoopproject.AccountPageController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../wallpaper3.jpg" />
+         </image>
+      </ImageView>
+      <Pane prefHeight="600.0" prefWidth="800.0">
+         <children>
+            <Label fx:id="lbl_username" layoutX="14.0" layoutY="15.0" prefHeight="36.0" prefWidth="154.0" text="USERNAME">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl_name_surname" layoutX="14.0" layoutY="51.0" prefHeight="36.0" prefWidth="208.0" text="Name Surname">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="txt_area_shared_post" layoutX="11.0" layoutY="194.0" prefHeight="383.0" prefWidth="192.0" />
+            <TextArea fx:id="txt_area_home_page" layoutX="262.0" layoutY="193.0" prefHeight="383.0" prefWidth="200.0" />
+            <Label layoutX="307.0" layoutY="170.0" text="Home Page">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txt_find_account_name" layoutX="519.0" layoutY="57.0" prefHeight="25.0" prefWidth="218.0" />
+            <Label layoutX="519.0" layoutY="33.0" prefHeight="17.0" prefWidth="54.0" text="Search">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn_find_account" layoutX="737.0" layoutY="57.0" mnemonicParsing="false" onAction="#btn_click_find_account" text="Find">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </Button>
+            <ListView fx:id="lv_friends_list" layoutX="533.0" layoutY="194.0" prefHeight="383.0" prefWidth="200.0" />
+            <Label layoutX="80.0" layoutY="170.0" text="Posts">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="595.0" layoutY="169.0" text="Friends">
+               <font>
+                  <Font name="Arial Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl_account_not_found" layoutX="561.0" layoutY="85.0" prefHeight="16.0" prefWidth="169.0" textFill="RED">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txt_share_post" layoutX="11.0" layoutY="137.0" prefHeight="25.0" prefWidth="192.0" />
+            <Button fx:id="btn_share_post" layoutX="210.0" layoutY="137.0" mnemonicParsing="false" onAction="#btn_click_share_post" prefHeight="25.0" prefWidth="54.0" text="Share">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </Button>
+            <Label layoutX="14.0" layoutY="113.0" text="Share Post">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn_logout" layoutX="722.0" layoutY="3.0" mnemonicParsing="false" onAction="#btn_click_logout" prefHeight="25.0" prefWidth="76.0" text="Log out">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</Pane>

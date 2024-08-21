@@ -1,0 +1,5 @@
+frkn/Selam,Nasılsın,İyi günler/Merhaba,günaydın
+fzlt/Merhaba,günaydın/Selam,Nasılsın,İyi günler
+fth/Herkese merhaba!/Gönderi1,Gönderi2,Gönderi3
+brk/Gönderi1,Gönderi2,Gönderi3/Herkese merhaba!
+ahmt/null/Herkese merhaba!
